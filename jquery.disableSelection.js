@@ -1,5 +1,12 @@
 (function ($) {
     $.fn.disableSelection = function () {
-        return this.attr('unselectable', 'on').css('user-select', 'none').on('selectstart', false);
+        this.attr('unselectable', 'on').css('user-select', 'none').on('selectstart', false);
+        return this.on("DOMNodeInserted", function (e) {
+            var items;
+            items = $(e.target);
+            if (items.length > 0) {
+                items.attr('unselectable', 'on').css('user-select', 'none').on('selectstart', false);
+            }
+        });
     };
 })(jQuery);
