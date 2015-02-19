@@ -7,5 +7,6 @@
                        items.attr('unselectable', 'on').css('user-select', 'none').on('selectstart', false)
                     return
                )
+        return
     return
 )(jQuery)
