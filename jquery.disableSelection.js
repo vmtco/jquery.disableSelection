@@ -1,7 +1,7 @@
 (function ($) {
     $.fn.disableSelection = function () {
         this.attr('unselectable', 'on').css('user-select', 'none').on('selectstart', false);
-        return this.on("DOMNodeInserted", function (e) {
+        this.on("DOMNodeInserted", function (e) {
             var items;
             items = $(e.target);
             if (items.length > 0) {
