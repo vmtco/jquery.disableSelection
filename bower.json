@@ -8,7 +8,7 @@
   "main": "jquery.disableSelection.coffee",
   "moduleType": "globals",
   "dependencies": {
-    "jquery": "~1.9.1"
+    "jquery": ">= 1.9.1"
   },
   "description": "Disable selection of text content within the set of matched elements",
   "keywords": [
