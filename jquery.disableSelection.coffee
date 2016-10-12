@@ -5,6 +5,6 @@
                 items = $(e.target)
                 items.attr('unselectable', 'on').css('user-select', 'none').on('selectstart', false) if items.length > 0
                 return
-        return
+        this
     return
 )(jQuery)

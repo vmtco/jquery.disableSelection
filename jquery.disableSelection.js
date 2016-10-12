@@ -8,5 +8,6 @@
         items.attr('unselectable', 'on').css('user-select', 'none').on('selectstart', false);
       }
     });
+    return this;
   };
 })(jQuery);
