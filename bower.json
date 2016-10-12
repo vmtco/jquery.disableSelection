@@ -16,5 +16,8 @@
     "disable",
     "jquery"
   ],
+  "ignore": [
+    ".*"
+  ],
   "license": "Apache"
 }
